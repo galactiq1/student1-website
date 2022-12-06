@@ -2,6 +2,13 @@ h1 {
   color: blue;
 }
 
-iframe {
- border: red 2px 2px dotted ;
+
+
+
+footer {
+  width: 100%; 
+  color: white;
+  background-color: darkgrey;
+  position: fixed;
+  bottom: 0;
 }
