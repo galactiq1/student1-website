@@ -11,4 +11,7 @@ footer {
   background-color: darkgrey;
   position: fixed;
   bottom: 0;
+  font-size: 16px;
+  text-align: center;
+  background-image: linear-gradient(red, yellow);
 }
