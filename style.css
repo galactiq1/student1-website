@@ -1,21 +1,131 @@
-h1 { 
-  color: blue;
+/* css code */
+/* A '*' means all code, so all code now has a transition of 200ms if anything changes. */
+* { 
+    transition: all 200ms;
 }
 
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(rgb(158, 186, 0), rgb(210, 0, 0));
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
+header {
+    background-color: rgb(95, 0, 51);
+    width: 100%;
+    color: white;
+    height: max-content;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+}
 
+header li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header a {
+    color: white;
+}
+
+div.square {
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 30px;
+    margin: 0 20px;
+
+    animation-name: header-block;
+    animation-duration: 5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+main {
+    width: max-content;
+    animation-name: flyintext;
+    animation-duration: 5s;
+    max-width: 50%;
+    margin: 110px auto 20px;
+}
+
+h1, h2, h3 {
+    margin: 20px 0 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+iframe {
+    margin: 30px 0;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    transition: all 1s;
+    border-radius: 30px;
+}
 
 footer {
-  width: 100%; 
-  color: white;
-  background-color: darkgrey;
-  position: fixed;
-  bottom: 0;
-  font-size: 16px;
-  text-align: center;
-  transition: 0.3s;
+    background-color: rgb(195, 255, 249);;
+    width: 100%;
+    color: rgb(195, 255, 249);
+    font-size: 16px;
+    text-align: center;
+
+    padding: 20px 0;
+
+    position: relative;
+    left: 0;
+    bottom: 0;
+
+    transition: all 0.3s;
 }
 
-footer: hover {
-  color: red;
+footer p {
+    margin: 0;
 }
+
+footer p:first-of-type  {
+    margin-top: 20px;
+}
+
+
+/* animations */
+footer:hover {
+    color: rgb(35, 19, 19);
+}
+
+@keyframes header-block {
+    0% {margin: 0 20px; margin-top: 0;}
+    50% {margin-left: 1200px;}
+    100% {margin-left: 20px;}
+}
+
+img:hover {
+    width: 250px;
+}
+
+a:hover {
+    color: rgb(43, 183, 0);
+}
+
+iframe:hover {
+    width: 1100px;
+    height: 600px;
+}
+
+@keyframes flyintext {
+    from {color: rgb(195, 255, 249);}
+    to {color: black;}
+}
+
