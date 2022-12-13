@@ -16,15 +16,15 @@ header {
     background-color: rgb(95, 0, 51);
     width: 100%;
     color: white;
+    
     height: max-content;
     position: fixed;
     left: 0;
     top: 0;
-    margin-bottom: 20px;
 }
 
 header li {
-    display: inline-block;
+    display: inline;
     margin-left: 20px;
 }
 
